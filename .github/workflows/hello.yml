@@ -1,0 +1,18 @@
+name: Hello World!
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say hello
+        run: |
+          echo "Hello, world!"
+          echo "This is a GitHub Actions workflow."
+          echo "It runs on every push to the main branch."
+          echo "You can customize it to run tests, build your project, or deploy it."
+          echo "Happy coding!"
