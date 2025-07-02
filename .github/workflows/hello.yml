@@ -16,3 +16,11 @@ jobs:
           echo "It runs on every push to the main branch."
           echo "You can customize it to run tests, build your project, or deploy it."
           echo "Happy coding!"
+      - name: Now it is
+        run: |
+          echo "Current date and time is displayed below."
+          date
+      - name: Directory content
+        run: |
+          echo "Listing the current directory content:"
+          ls -la
